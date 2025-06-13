@@ -1,0 +1,94 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Zelda: Breath of the Wild",
+      "genre": "Acción-Aventura",
+      "year": 2017,
+      "rating": 9.5,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661776992/emahu70d8uksuzoxc7ok.jpg",
+      "description": "Una aventura épica en un vasto mundo abierto"
+    },
+    {
+      "id": 2,
+      "title": "Battlefield 4",
+      "genre": "Acción-Shooter",
+      "year": 2013,
+      "rating": 9.7,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1703345599/vcjicmvp7ehrngpkcjgt.jpg",
+      "description": "Una historia de guerra y acción desenfrenada"
+    },
+    {
+      "id": 3,
+      "title": "The Witcher Wild Hunt",
+      "genre": "RPG",
+      "year": 2015,
+      "rating": 9.3,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661376999/ttcax1sorwwjizy9knlu.png",
+      "description": "Una aventura de fantasía con decisiones morales complejas"
+    },
+    {
+      "id": 4,
+      "title": "God of War",
+      "genre": "Acción-Aventura",
+      "year": 2018,
+      "rating": 9.4,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661777578/cflp1ewtmbiw7gr1ldbu.png",
+      "description": "La épica historia de un padre y su hijo en la mitología nórdica"
+    },
+    {
+      "id": 5,
+      "title": "A Plague Tale Innocence",
+      "genre": "RPG",
+      "year": 2019,
+      "rating": 8.8,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1703342268/k6u1xi0aawxou2gvc1qj.jpg",
+      "description": "Suspenso y animaciones espectaculares entre las ratas"
+    },
+    {
+      "id": 6,
+      "title": "Elden Ring",
+      "genre": "Acción RPG",
+      "year": 2022,
+      "rating": 9.6,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661777435/iwgwzrxk5u0esfpcnlrc.jpg",
+      "description": "Un mundo oscuro y desafiante creado por FromSoftware"
+    },
+    {
+      "id": 7,
+      "title": "Mario Kart",
+      "genre": "Plataforma",
+      "year": 2014,
+      "rating": 8.3,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661777149/xvs6yjqbc1nvftzm08vl.png",
+      "description": "Una aventura colorida y creativa con Mario"
+    },
+    {
+      "id": 8,
+      "title": "Horizon Zero Dawn",
+      "genre": "Acción RPG",
+      "year": 2017,
+      "rating": 9.0,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661440277/lau7ffqgb9bozzzpcbyi.jpg",
+      "description": "Un mundo post-apocalíptico con máquinas robóticas"
+    },
+    {
+      "id": 9,
+      "title": "F1 2022",
+      "genre": "Simulador",
+      "year": 2022,
+      "rating": 9.1,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1661440202/b0goe9lwwoqap2tz6whh.jpg",
+      "description": "Viví la experiencia de la f1 en carne propia"
+    },
+    {
+      "id": 10,
+      "title": "Inscryption",
+      "genre": "Strategia",
+      "year": 2021,
+      "rating": 9.5,
+      "image": "https://res.cloudinary.com/ddhtu5css/image/upload/v1703343445/d42wgjnjlo9z0zobcpr6.jpg",
+      "description": "Una experiencia única de conexión y entrega"
+    }
+  ]
+}

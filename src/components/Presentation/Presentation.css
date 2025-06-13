@@ -1,0 +1,50 @@
+.presentation {
+  padding: 2rem;
+}
+
+.presentation h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  cursor:auto;
+}
+
+.team-card:hover {
+  transform: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    padding: 1rem;
+  }
+
+  .team-grid {
+    display: block;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .team-card {
+    cursor: auto;
+    margin: 5% 0;
+    width: 90%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+

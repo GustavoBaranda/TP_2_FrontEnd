@@ -1,0 +1,170 @@
+.bitacora-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-section,
+.methodology-section,
+.organization-section {
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: scale(1.05);
+}
+
+.team-member-card h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.role {
+  color: #646cff;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.responsibilities {
+  color: #888;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.methodology-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.methodology-card h3 {
+  color: #646cff;
+  margin-top: 0;
+}
+
+.methodology-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.methodology-card li {
+  color: #fff;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.methodology-card li:before {
+  content: "•";
+  color: #646cff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.organization-section {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.organization-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.organization-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.organization-benefits {
+  margin-top: 1.5rem;
+}
+
+.organization-benefits h3 {
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.organization-benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.organization-benefits li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.organization-benefits li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+}
+
+/* .organization-section p {
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.organization-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.organization-section li {
+  color: #fff;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.organization-section li:before {
+  content: "→";
+  color: #646cff;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+@media (max-width: 768px) {
+  .bitacora-container {
+    padding: 1rem;
+  }
+
+  .team-grid,
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+}

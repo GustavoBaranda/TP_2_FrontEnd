@@ -1,0 +1,103 @@
+.team-container {  
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 1400px;
+}
+
+.team-container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.team-profiles {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+}
+
+.team-profile-card {
+  background-color: #1a1a1a;
+  width: 250px;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.team-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #646cff;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-profile-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.skills-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skill-tag {
+  background-color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.back-button {
+  align-self: self-end;
+  padding: 10px 30px;
+  margin-bottom: 2rem;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #646cff;
+  color: #646cff;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #646cff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    padding: 1rem;
+  }
+
+  .team-profiles {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}

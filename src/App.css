@@ -1,0 +1,39 @@
+body {
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container {
+  display: flex;
+  align-items: center;
+  padding-left: 250px;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.main-content {
+  margin: 0 auto;
+  padding-inline: 2rem;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .main-content {
+    padding: 1rem;
+    margin-top: 0;
+  }
+  .app-container {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
