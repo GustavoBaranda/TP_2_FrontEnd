@@ -1,4 +1,4 @@
-# Proyecto Frontend TP1 - BreakingCode
+# Proyecto Frontend TP2 - BreakingCode
 
 Este es un proyecto realizado en React utilizando Vite como entorno de desarrollo rápido. El objetivo es mostrar distintas secciones interactivas: presentación del equipo, bitácora, galería de videojuegos (datos JSON), integración con una API de películas y una galería de imágenes de proyectos.
 
