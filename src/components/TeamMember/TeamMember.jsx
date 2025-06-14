@@ -1,12 +1,15 @@
 import ImageGallery from '../ImageGallery/ImageGallery';
 import './TeamMember.css';
+import img1 from '../../assets/chetifabene.png';
+import img2 from '../../assets/DescubriendoJardiMaternal.png';  
+import img3 from '../../assets/lasverde.png'; 
 
+const gustavo = [img1, img2, img3];
 const TeamMember = ({ member }) => {
   // Get project images for the gallery
-  const projectImages = member.projects.map((project) => ({
-    url: `https://picsum.photos/seed/${project.name}/800/600`, // Using placeholder images
-    title: project.name,
-  }));
+  const projectImages = {
+    gustavo: gustavo,
+  };
 
   return (
     <div className='team-member'>
@@ -28,7 +31,7 @@ const TeamMember = ({ member }) => {
 
       <div className='profile-section'>
         <h3>Proyectos</h3>
-        <ImageGallery images={projectImages.map((img) => img.url)} />
+        <ImageGallery images={projectImages.gustavo} />
       </div>
 
       <div className='profile-section'>

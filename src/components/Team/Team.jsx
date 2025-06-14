@@ -5,7 +5,7 @@ import './Team.css';
 const teamData = [
   {
     name: 'Catriel Escobar',
-    image: 'https://avatars.githubusercontent.com/u/125727012?v=4',
+    image: 'https://media.licdn.com/dms/image/v2/D4D03AQG67fZEN8HLiw/profile-displayphoto-shrink_800_800/B4DZbwPgeEIEAg-/0/1747787319889?e=1755129600&v=beta&t=lQZ9XD-xZbqJr_fJhsG9xjV7yR27w90_OdnzgSf9MEk',
     skills: ['JavaScript', 'React', 'Node.js', 'Python', 'SQL'],
     projects: [
       {

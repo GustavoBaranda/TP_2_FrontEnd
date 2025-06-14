@@ -17,6 +17,7 @@ const Movies = () => {
   }, [page]);
 
   const fetchMovies = async () => {
+    setLoading(true); // Asegura que loading sea true al iniciar la carga
     try {
       const response = await fetch(
         `${API_URL}/movie/popular?language=es-ES&page=${page}`,
@@ -27,11 +28,12 @@ const Movies = () => {
           },
         }
       );
-      console.log(response);
       if (!response.ok) throw new Error('Error al cargar las películas');
       const data = await response.json();
       setMovies(data.results);
       setError(null);
+      // Espera artificial de 2 segundos antes de quitar el loading
+      await new Promise((resolve) => setTimeout(resolve, 300));
     } catch (err) {
       setError(err.message);
     } finally {
@@ -47,7 +49,63 @@ const Movies = () => {
     setSelectedMovie(null);
   };
 
-  if (loading) return <div className='loading'>Cargando...</div>;
+  if (loading) {
+    return (
+      <div className='movies-container'>
+        <h1>Películas Populares</h1>
+        <div className='pagination'>
+          <button
+            onClick={() => {
+              setPage((p) => Math.max(1, p - 1));
+              window.scrollTo(0, 0);
+            }}
+            disabled={page === 1}>
+            Anterior
+          </button>
+          <span>Página {page}</span>
+          <button
+            onClick={() => {
+              setPage((p) => p + 1);
+              window.scrollTo(0, 0);
+            }}>
+            Siguiente
+          </button>
+        </div>
+        <div className='movies-grid'>
+          {[...Array(8)].map((_, idx) => (
+            <div className='movie-card skeleton' key={idx}>
+              <div className='movie-card-poster skeleton-poster'></div>
+              <div className='movie-card-content'>
+                <div className='skeleton-title'></div>
+                <div className='movie-card-info'>
+                  <div className='skeleton-year'></div>
+                  <div className='skeleton-rating'></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className='pagination'>
+          <button
+            onClick={() => {
+              setPage((p) => Math.max(1, p - 1));
+              window.scrollTo(0, 0);
+            }}
+            disabled={page === 1}>
+            Anterior
+          </button>
+          <span>Página {page}</span>
+          <button
+            onClick={() => {
+              setPage((p) => p + 1);
+              window.scrollTo(0, 0);
+            }}>
+            Siguiente
+          </button>
+        </div>
+      </div>
+    );
+  }
   if (error) return <div className='error'>{error}</div>;
 
   if (selectedMovie) {
