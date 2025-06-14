@@ -44,7 +44,7 @@ Este es un proyecto realizado en React utilizando Vite como entorno de desarroll
 ## Autores
 
 - Gustavo Baranda
-- Catriel Escobar
+- Catriel Escobar 
 - Marcelo Galimberti
 - María Eugenia Bava
 
