@@ -2,7 +2,7 @@ import ImageGallery from '../ImageGallery/ImageGallery';
 import './TeamMember.css';
 import img1 from '../../assets/chetifabene.png';
 import img2 from '../../assets/DescubriendoJardiMaternal.png';  
-import img3 from '../../assets/lasverde.png'; 
+import img3 from '../../assets/lasVerde.png'; 
 
 const gustavo = [img1, img2, img3];
 const TeamMember = ({ member }) => {
